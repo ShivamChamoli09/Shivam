@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diagnose</title>
+<link href="css/elements.css" rel="stylesheet">
+<script src="js/my_js.js"></script>
+
+<style>
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc1 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc2 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+#abc3 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc4 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc5 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+#abc6 {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+img#close {
+position:absolute;
+right:-14px;
+top:-14px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:50%;
+top:17%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif
+}
+form {
+max-width:300px;
+min-width:250px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff
+}
+p {
+margin-top:30px
+}
+h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+input[type=text] {
+width:82%;
+padding:10px;
+margin-top:30px;
+border:1px solid #ccc;
+padding-left:40px;
+font-size:16px;
+font-family:raleway
+}
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:#FFBC00;
+color:#fff;
+border:1px solid #FFCB00;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+button {
+width:10%;
+height:45px;
+border-radius:3px;
+background-color:#cd853f;
+color:#fff;
+font-family:'Raleway',sans-serif;
+font-size:18px;
+cursor:pointer
+}
+
+.inp
+{
+height:10px;
+width:20px;
+}
+</style>
+</head>
+
+<body id="body" style="overflow:hidden;">
+
+<h2>Enter the number of symptoms you need to enter</h2><br/>
+<input type="text" id="inp">
+
+
+<div id="abc">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="cancel1.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abci1" placeholder="Name" type="text">
+<br/><br/>
+<a  href="javascript:%20check_empty()" id="submit">Send</a>
+
+</form>
+</div>
+</div>
+<p id="demo"/>
+<div id="abc1">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc1i1" name="name" placeholder="Symptom 1" type="text">
+<input class="inp" id="abc1i2" name="name" placeholder="Symptom 2" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+<div id="abc2">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc2i1" placeholder="Symptom 1" type="text">
+<input class="inp" id="abc2i2" placeholder="Symptom 2" type="text">
+<input class="inp" id="abc2i3" placeholder="Symptom 3" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+<div id="abc3">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc3i1" placeholder="Symptom 1" type="text">
+<input class="inp" id="abc3i2" placeholder="Symptom 2" type="text">
+<input class="inp" id="abc3i3" placeholder="Symptom 3" type="text">
+<input class="inp" id="abc3i4" placeholder="Symptom 4" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+<div id="abc4">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc4i1" placeholder="Symptom 1" type="text">
+<input class="inp" id="abc4i2" placeholder="Symptom 2" type="text">
+<input class="inp" id="abc4i3" placeholder="Symptom 3" type="text">
+<input class="inp" id="abc4i4" placeholder="Symptom 4" type="text">
+<input class="inp" id="abc4i5" placeholder="Symptom 5" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+<div id="abc5">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc5i1" placeholder="Symptom 1" type="text">
+<input class="inp" id="abc5i2" placeholder="Symptom 2" type="text">
+<input class="inp" id="abc5i3" placeholder="Symptom 3" type="text">
+<input class="inp" id="abc5i4" placeholder="Symptom 4" type="text">
+<input class="inp" id="abc5i5" placeholder="Symptom 5" type="text">
+<input class="inp" id="abc5i6" placeholder="Symptom 6" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+<div id="abc6">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="images/3.png" onclick ="div_hide()">
+<h2>Enter Symptoms</h2>
+<hr>
+<input class="inp" id="abc6i1" placeholder="Name" type="text">
+<input class="inp" id="abc6i2" placeholder="Name" type="text">
+<input class="inp" id="abc6i3" placeholder="Name" type="text">
+<input class="inp" id="abc6i4" placeholder="Name" type="text">
+<input class="inp" id="abc6i5" placeholder="Name" type="text">
+<input class="inp" id="abc6i6" placeholder="Name" type="text">
+<input class="inp" id="abc6i7" placeholder="Name" type="text">
+<br/><br/><a href="javascript:%20check_empty()" id="submit">Send</a>
+</form>
+</div>
+</div>
+
+
+<button id="popup" onclick="div_show()">Popup</button><br/><br/>
+
+sleeping Difficulty:<input type="checkbox" id="check1" value="Sleeping difficulty"/>
+Daytime Sleepiness:<input type="checkbox" id="check2"/>
+Lack of concentration:<input type="checkbox" id="check3"/>
+Depression:<input type="checkbox" id="check4"/>
+Headache:<input type="checkbox" id="check5"/>
+Slowness in activity:<input type="checkbox" id="check6"/>
+Stools:<input type="checkbox" id="check7"/>
+Pain:<input type="checkbox" id="check7"/>
+Fever:<input type="checkbox" id="check7"/>
+Bloating:<input type="checkbox" id="check7"/>
+Nausea:<input type="checkbox" id="check7"/>
+Fast Heart Rate:<input type="checkbox" id="check7"/>
+
+<button onclick="boxcheck()">Submit</button>
+</body>
+
+<script>
+function boxcheck()
+{
+var checks1=document.getElementById("check1").checked;
+var checks2=document.getElementById("check2").checked;
+var checks3=document.getElementById("check3").checked;
+var checks4=document.getElementById("check4").checked;
+var checks5=document.getElementById("check5").checked;
+var checks6=document.getElementById("check6").checked;
+var checks7=document.getElementById("check7").checked;
+
+if(document.getElementById("check1").checked && document.getElementById("check2").checked && document.getElementById("check3").checked &&document.getElementById("check4").checked && document.getElementById("check5").checked &&document.getElementById("check6").checked)
+{alert("Insomnia");}
+
+}
+
+
+function div_show() {
+var abc1s1;
+var abc1s2,abc2s1,abc2s2,abc2s3,abc3s1,abc3s2,abc3s3,abc3s4,abc4s1,abc4s2,abc4s3,abc4s4,abc4s5;
+var abc5s1,abc5s2,abc5s3,abc5s4,abc5s5,abc5s6,abc6s1,abc6s2,abc6s3,abc6s4,abc6s5,abc6s6,abc6s7;
+var a=document.getElementById("inp").value;
+if(a==1)
+{
+document.getElementById('abc').style.display = "block";
+
+}
+
+if(a==2)
+{
+document.getElementById('abc1').style.display = "block";
+}
+if(a==3)
+{
+document.getElementById('abc2').style.display = "block";
+}
+
+if(a==4)
+{
+document.getElementById('abc3').style.display = "block";
+}
+
+if(a==5)
+{
+document.getElementById('abc4').style.display = "block";
+}
+if(a==6)
+{
+document.getElementById('abc5').style.display = "block";
+}
+if(a==7)
+{
+document.getElementById('abc6').style.display = "block";
+}
+
+}
+
+function check_empty() {
+abc1s1=document.getElementById("abc1i1").value;
+abc1s2=document.getElementById("abc1i2").value;
+abc2s1=document.getElementById("abc2i1").value;
+abc2s2=document.getElementById("abc2i2").value;
+abc2s3=document.getElementById("abc2i3").value;
+abc3s1=document.getElementById("abc3i1").value;
+abc3s2=document.getElementById("abc3i2").value;
+abc3s3=document.getElementById("abc3i3").value;
+abc3s4=document.getElementById("abc3i4").value;
+abc4s1=document.getElementById("abc4i1").value;
+abc4s2=document.getElementById("abc4i2").value;
+abc4s3=document.getElementById("abc4i3").value;
+abc4s4=document.getElementById("abc4i4").value;
+abc4s5=document.getElementById("abc4i5").value;
+abc5s1=document.getElementById("abc5i1").value;
+abc5s2=document.getElementById("abc5i2").value;
+abc5s3=document.getElementById("abc5i3").value;
+abc5s4=document.getElementById("abc5i4").value;
+abc5s5=document.getElementById("abc5i5").value;
+abc5s6=document.getElementById("abc5i6").value;
+abc6s1=document.getElementById("abc6i1").value;
+abc6s2=document.getElementById("abc6i2").value;
+abc6s3=document.getElementById("abc6i3").value;
+abc6s4=document.getElementById("abc6i4").value;
+abc6s5=document.getElementById("abc6i5").value;
+abc6s6=document.getElementById("abc6i6").value;
+abc6s7=document.getElementById("abc6i7").value;
+
+
+if(abc5s1=="runny nose" || abc5s1=="sore throat" || abc5s1=="cough" || abc5s1=="congestion" || abc5s1=="body pain" || abc5s1=="headache" || abc5s1=="sneezing" || abc5s1=="low fever")
+{
+if(abc5s2=="runny nose" || abc5s2=="sore throat" || abc5s2=="cough" || abc5s2=="congestion" || abc5s2=="body pain" || abc5s2=="headache" || abc5s2=="sneezing" || abc5s2=="low fever")
+{
+if(abc5s2=="runny nose" || abc5s2=="sore throat" || abc5s2=="cough" || abc5s2=="congestion" || abc5s2=="body pain" || abc5s2=="headache" || abc5s2=="sneezing" || abc5s2=="low fever")
+{
+if(abc5s3=="runny nose" || abc5s3=="sore throat" || abc5s3=="cough" || abc5s3=="congestion" || abc5s3=="body pain" || abc5s3=="headache" || abc5s3=="sneezing" || abc5s3=="low fever")
+{
+if(abc5s4=="runny nose" || abc5s4=="sore throat" || abc5s4=="cough" || abc5s4=="congestion" || abc5s4=="body pain" || abc5s4=="headache" || abc5s4=="sneezing" || abc5s4=="low fever")
+{
+if(abc5s5=="runny nose" || abc5s5=="sore throat" || abc5s5=="cough" || abc5s5=="congestion" || abc5s5=="body pain" || abc5s5=="headache" || abc5s5=="sneezing" || abc5s5=="low fever")
+{
+if(abc5s6=="runny nose" || abc5s6=="sore throat" || abc5s6=="cough" || abc5s6=="congestion" || abc5s6=="body pain" || abc5s6=="headache" || abc5s6=="sneezing" || abc5s6=="low fever")
+{
+alert("You may be suffering from cold");
+}}}}}}}
+
+
+
+
+if(abc5s1=="sleeping difficulty" || abc5s1=="daytime sleepiness" || abc5s1=="lack of concentration" || abc5s1=="depression" || abc5s1=="headache" || abc5s1=="slowness in activity")
+{
+
+ if(abc5s2=="sleeping difficulty" || abc5s2=="daytime sleepiness" || abc5s2=="lack of concentration" || abc5s2=="depression" || abc5s2=="headache" || abc5s2=="slowness in activity")
+{ 
+  if(abc5s2==abc5s1)
+{  
+   alert("Same Input detected");
+}
+else
+{
+if(abc5s3=="sleeping difficulty" || abc5s3=="daytime sleepiness" || abc5s3=="lack of concentration" || abc5s3=="depression" || abc5s3=="headache" || abc5s3=="slowness in activity")
+{ 
+    if(abc5s4=="sleeping difficulty" || abc5s4=="daytime sleepiness" || abc5s4=="lack of concentration" || abc5s4=="depression" || abc5s4=="headache" || abc5s4=="slowness in activity")
+  {
+     if(abc5s5=="sleeping difficulty" || abc5s5=="daytime sleepiness" || abc5s5=="lack of concentration" || abc5s5=="depression" || abc5s5=="headache" || abc5s5=="slowness in activity")
+           {
+            if(abc5s6=="sleeping difficulty" || abc5s6=="daytime sleepiness" || abc5s6=="lack of concentration" || abc5s6=="depression" || abc5s6=="headache" || abc5s6=="slowness in activity")
+             {alert("Your possible disease is Insomnia");}
+           }
+
+   }}
+}}}
+
+
+
+if(abc5s1=="dizziness" || abc5s1=="fatigue" || abc5s1=="weakness" || abc5s1=="fast heart rate" || abc5s1=="headache" || abc5s1=="shortness of breath")
+{
+
+ if(abc5s2=="dizziness" || abc5s2=="fatigue" || abc5s2=="weakness" || abc5s2=="fast heart rate" || abc5s2=="headache" || abc5s2=="shortness of breath")
+{ 
+  if(abc5s2==abc5s1)
+{  
+   alert("Same Input detected");
+}
+else
+{
+if(abc5s3=="dizziness" || abc5s3=="fatigue" || abc5s3=="weakness" || abc5s3=="fast heart rate" || abc5s3=="headache" || abc5s3=="shortness of breath")
+{ 
+    if(abc5s4=="dizziness" || abc5s4=="fatigue" || abc5s4=="weakness" || abc5s4=="fast heart rate" || abc5s4=="headache" || abc5s4=="shortness of breath")
+  {
+     if(abc5s5=="dizziness" || abc5s5=="fatigue" || abc5s5=="weakness" || abc5s5=="fast heart rate" || abc5s5=="headache" || abc5s5=="shortness of breath")
+           {
+            if(abc5s6=="dizziness" || abc5s6=="fatigue" || abc5s6=="weakness" || abc5s6=="fast heart rate" ||               abc5s6=="headache" || abc5s6=="shortness of breath")
+             {alert("Anemia");}
+           }
+
+   }}
+}}}
+
+if(abc4s1=="loose stools" || abc4s1=="abdominal cramps" || abc4s1=="fever" || abc4s1=="bloating" || abc4s1=="nausea" || abc4s1=="watery stools" || abc4s1=="abdominal pain")
+{
+
+ if(abc4s2=="loose stools" || abc4s2=="abdominal cramps" || abc4s2=="fever" || abc4s2=="bloating" || abc4s2=="nausea" || abc4s2=="watery stools" || abc4s2=="abdominal pain")
+{ 
+  if(abc4s2==abc4s1)
+{  
+   alert("Same Input detected");
+}
+else
+{
+if(abc4s3=="loose stools" || abc4s3=="abdominal cramps" || abc4s3=="fever" || abc4s3=="bloating" || abc4s3=="nausea" || abc4s3=="watery stools" || abc4s3=="abdominal pain")
+{ 
+    if(abc4s4=="loose stools" || abc4s4=="abdominal cramps" || abc4s4=="fever" || abc4s4=="bloating" || abc4s4=="nausea" || abc4s4=="watery stools" || abc4s4=="abdominal pain")
+  {
+     if(abc4s5=="loose stools" || abc4s5=="abdominal cramps" || abc4s5=="fever" || abc4s5=="bloating" || abc4s5=="nausea" || abc4s5=="watery stools" || abc4s5=="abdominal pain")
+           {
+                       {alert("You may be suffering from Diarrhea");}
+           }
+
+   }
+}}}}
+}
+
+
+
+
+
+
+
+
+
+
+
+function div_hide(){
+document.getElementById('abc').style.display  = "none";
+document.getElementById('abc1').style.display = "none";
+document.getElementById('abc2').style.display = "none";
+document.getElementById('abc3').style.display = "none";
+document.getElementById('abc4').style.display = "none";
+document.getElementById('abc5').style.display = "none";
+document.getElementById('abc6').style.display = "none";
+}
+</script>
+</html>
+
+
+</html>

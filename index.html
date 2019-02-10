@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  background: url(ba.jpg) no-repeat;
+  background-size: 100% 25%;
+  
+  
+}
+
+.bord{
+border:2px solid none;
+background-color:lightyellow;
+background-size:auto;
+color:black;
+margin:10px;padding:10px;
+
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-image:url(ba.jpg);
+    
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:lightblue;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+div.desc {
+     color:grey;
+    padding: 2px;
+}
+
+.centered 
+  {
+    color:darkcyan;
+    font-size:40px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+.mySlides {display:none;}
+
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color:#4682B4;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  width: 450px;
+  transition: all 0.5s;
+  cursor: pointer;
+  
+ 
+}
+
+button:hover{
+padding-left:80px;
+color:cyan;
+}
+
+
+.vl {
+    border-left: 1px solid white;
+    height: 17px;
+}
+
+
+ul {
+    list-style-type: none;
+    margin-left: 60px;
+    padding: 0;
+    overflow: hidden;
+    font-size:15px;
+    
+}
+
+
+li {
+    float: left;
+    
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: lightblue;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 105px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.container {
+    position: relative;
+    text-align: center;
+    
+}
+
+
+
+.centered 
+  {
+    color:darkcyan;
+    font-size:40px;
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+  }
+
+
+
+
+
+
+
+
+
+.navbar {
+    overflow: hidden;
+    background-color: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left:50px;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown1 {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown1 .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown1:hover .dropbtn {
+    background-color: lightblue;
+    }
+
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown1-content .header {
+    background-color:lightblue;
+    padding: 16px;
+    color: white;
+}
+
+.dropdown1:hover .dropdown1-content {
+    display: block;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color:lightblue;
+    height: 200px;
+}
+
+.column a {
+    float: none;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.column a:hover {
+    background-color: #ddd;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        height: auto;
+    }
+
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+  <a href="article1.html">Article 1</span></a>
+  <a href="article2.html">Article 2</a>
+  <a href="article3.html">Article 3</a>
+  
+</div>
+
+
+
+
+<div id="main">
+  
+ <span style="font-size:20px;cursor:pointer;color:white" onclick="openNav()" >&#9776;</span>
+<ul>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn"  style="color:white">Resources</a>
+    <div class="dropdown-content">
+      <a style="color:blue">Diagnose</a>
+      <a href="diet.html" style="color:blue">Diet Plan</a>
+      <a href="symptoms.html" style="color:blue">Diseases</a>
+    </div>
+  </li> 
+
+ 
+ <li><a href="login.html" style="color:white">Login</a></li>
+  <li><a href="sign1.html" style="color:white" >SignUp</a></li>
+
+
+
+
+<div class="dropdown1">
+    <button class="dropbtn" style="color:white">Diseases
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown1-content">
+         
+      <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+          <a href="viral.html">Viral</a>
+          <a href="flu.html">Flu</a>
+          <a href="allergy.html">Allergy</a>
+        </div>
+        <div class="column">
+          <h3>Category 2</h3>
+          <a href="insomnia.html">Insomnia</a>
+          <a href="influenza.html">Influenza</a>
+          <a href="anemia.html">Anemia</a>
+        </div>
+        
+      </div>
+ <div class="row">
+        <div class="column">
+          <h3>Category 1</h3>
+          <a href="viral.html">Viral</a>
+          <a href="flu.html">Flu</a>
+          <a href="allergy.html">Allergy</a>
+        </div>
+    </div>
+  </div>
+</div>
+
+</ul>
+
+
+
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
+    document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("main").style.marginLeft= "0";
+    document.body.style.backgroundColor = "white";
+}
+
+
+</script>
+
+
+
+<br><br><br>
+<br><br><br><br><br>
+<div class="container">
+<div class="centered">
+<div style="font-size:55px;color:white;padding-left:70px">Disease Predictor</div><div style="font-size:20px;color:white">EAT HEALTHY<br>FEEL HEALTHY<br>STAY HEALTHY</div></div></div>
+
+
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br>
+<br><br><br><br><br><br>
+
+
+
+
+<img style="float:right;margin-right:17em;height:180px;width:300px" src="diag.jpg"><br/>
+<h3 style="color:green;padding-left:26%">Disease Diagnosis</h3><button class="button" style="vertical-align:middle;margin-left:15%;">Start Diagnosis</button>
+<br><br><br><br>
+
+<img style="float:right;margin-right:17em;height:180px;width:300px" src="diet.jpg"><br/>
+<h3 style="color:green;padding-left:27%">Healthy Diet</h3><a href="diet.html"><button class="button" style="vertical-align:middle;margin-left:15%">Diet Plan</button></a>
+<br><br><br><br>
+
+<img style="float:right;margin-right:17em;height:180px;width:300px" src="bact.jpg"><br/>
+<h3 style="color:green;padding-left:26%">Symptom Details</h3><a href="symptoms.html"><button class="button" style="vertical-align:middle;margin-left:15%;">Check Symptoms</button></a>
+
+<br><br><br><br><br>
+
+<hr color="lightblue">
+<h2 style="color:grey;padding-left:50px">Major Issues</h2>
+
+
+<a href="viral.html"><button class="button" style="width:120px;height:40px;font-size:20px;padding:5px;margin:10px">Viral</button></a>
+<a href="flu.html"><button class="button" style="width:120px;height:40px;font-size:20px;padding:5px;margin:10px">Flu</button></a>
+<a href="allergy.html"><button class="button" style="width:120px;height:40px;font-size:20px;padding:5px;margin:10px">Allergy</button></a>
+<a href="insomnia.html"><button class="button" style="width:120px;height:40px;font-size:20px;padding:5px;margin:10px">Insomnia</button></a>
+<a href="influenza.html"><button class="button" style="width:120px;height:40px;font-size:20px;padding:5px;margin:10px">Influenza</button></a>
+
+<hr color="lightblue">
+
+<span style="display:inline-block">
+<h1 style="color:grey;padding-left:50px">Trending Videos</h1>
+<iframe width="300" height="250" style="margin-left:50px"src="https://www.youtube.com/embed/a3oFUywz5DI">
+</iframe>
+</span>
+ 
+<iframe width="300" height="250" style="margin-left:60px" src="https://www.youtube.com/embed/ztiHRiFXtoc">
+</iframe>
+
+<iframe width="300" height="250" style="margin-left:60px"  src="https://www.youtube.com/embed/L96r6JXW03U">
+</iframe>
+</div>
+
+<span style="display:inline-block">
+<span style="padding-left:80px;color:grey">Keto & Risk of Heart Disease</span>
+<span style="padding-left:200px;color:grey">Exercise vs Diet</span>
+<span style="padding-left:300px;color:grey">Common Diseases</span>
+</span>
+
+<br/><br/>
+<br/><br/> 
+
+
+
+<div class="bord" style="background-color:lightyellow">
+<h1 style="color:grey;padding-left:50px">Top Stories</h1>
+<div class="w3-content w3-section" style="max-width:500px;margin-left:10%">
+  <img class="mySlides" src="graph.png" style="width:95%;height:300px">
+  <img class="mySlides" src="graph2.png" style="width:81%;height:300px">
+  <img class="mySlides" src="graph3.jpg" style="width:82%;height:300px">
+  <img class="mySlides" src="graph4.jpg" style="width:100%;height:300px">
+</div>
+<div class="w3-content w3-section" style="max-width:400px;max-height:350px;margin-left:60%">
+
+  <img class="mySlides" src="dis1.png" style="width:460px;height:300px">
+  <img class="mySlides" src="dis2.jpg" style="width:300px;height:300px">
+  <img class="mySlides" src="dis3.jpg" style="width:380px;height:300px">
+</div></div>
+<br>
+<div class="bord"><h1 style="text-align:center">Why This?</h1>
+
+ <p> >> To arouse Health awareness among people .</p>
+<p> >> To Let people diagnose themselves anywhere , anytime possible.</p>
+<p> >> To make the world a better place</p>
+<br><br><br><br><br>
+
+</div></div>
+
+<p style="font-size:13px;text-align:center">&copy2018 by DiseasePredictor</p>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+}
+</script>
+
+</body>
+
+</html> 

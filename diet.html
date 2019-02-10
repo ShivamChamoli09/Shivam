@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Diet Plan</title>
+<link href="css/elements.css" rel="stylesheet">
+<script src="js/my_js.js"></script>
+<style>
+body{
+background-color:#ccc;
+background-size:100% 100%;
+}
+
+
+#abc3 {
+width:100%;
+height:100%;
+opacity:0.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+
+#abc2 {
+width:100%;
+height:100%;
+opacity:0.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+
+#abc1 {
+width:100%;
+height:100%;
+opacity:0.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto
+}
+
+
+#abc {
+width:100%;
+height:100%;
+opacity:.95;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131;
+overflow:auto;
+}
+img#close {
+position:absolute;
+right:-14px;
+top:-20px;
+cursor:pointer
+}
+div#popupContact {
+position:absolute;
+left:25%;
+top:17%;
+font-family:'Raleway',sans-serif
+}
+
+
+form {
+max-width:550px;
+min-width:500px;
+padding:10px 50px;
+border:2px solid gray;
+border-radius:10px;
+font-family:raleway;
+background-color:#fff;
+}
+h2 {
+background-color:#FEFFED;
+padding:20px 35px;
+margin:-10px -50px;
+text-align:center;
+border-radius:10px 10px 0 0
+}
+hr {
+margin:10px -50px;
+border:0;
+border-top:1px solid #ccc
+}
+
+#submit {
+text-decoration:none;
+width:100%;
+text-align:center;
+display:block;
+background-color:red;
+color:#fff;
+border:1px solid #ccc;
+padding:10px 0;
+font-size:20px;
+cursor:pointer;
+border-radius:5px
+}
+span {
+color:red;
+font-weight:700
+}
+
+button:hover {
+    opacity: 0.8;
+}
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: red;
+  border: 2px solid #06D85F;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #06D85F;
+}
+
+.container {
+    padding: 16px;
+}
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.box {
+  width: 40%;
+  margin: 0 auto;
+  background: rgba(255,255,255,0.2);
+  padding: 20px;
+  border: 2px solid #ccc;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+pre{
+font-size:15px;
+}
+.imgcontainer {
+  text-align:center;  
+  margin: 24px 0 12px 0;
+}
+img.avatar {
+    width: 17%;
+    border-radius: 50%;
+
+}
+
+
+</style>
+</head>
+
+<body>
+      <div class="imgcontainer">
+        <img src="dietplan1.png" alt="Diet" class="avatar">
+      </div>
+
+
+
+    
+   <b>Enter Age</b><input  type="text" id="i1" placeholder="Enter Age">
+   <b>Enter Weight</b><input  type="text" id="i2" placeholder="Enter Weight" name="weight">
+   <b>Enter Height</b><input  type="text" id="i3" placeholder="Enter height (cm)" name="height"> 
+<br/><br/>
+
+<div id="abc3">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="cancel1.jpg" style="height:30px;width:30px" onclick ="div_hide()">
+<h2>Diet Tips For Weight Gain</h2>
+<hr>
+<p>Weight gain can be a time-consuming process. But you have to be patient and practice it correctly. Your aim is to put on weight in a healthy manner, not to add unhealthy kilos! So, focus on eating food, but at the right time and in the right quantity, rather than searching for various weight gain diet plans.<br/>
+The first step to gain weight is to increase your daily calorie intake. The next section tells you what high-calorie yet healthy foods will help you out.<br/><br/>
+
+<b>What You Need</b><br/>
+Eat foods that are rich in calories like pulses, cereals, meat, bread, rice, dry fruits, and nuts.<br/>
+<br/>
+1.<b> Include Calories In Your Diet</b>:<br/>
+Everything we eat has some calorie content. So like we eat food with fewer calories to lose weight, we need to eat food that has more calories to gain weight. You need to take in more than 250 calories daily to add roughly half a kilo to your current weight.<br/><br/>
+1) Add vegetables like French beans, broccoli, Chinese cabbage, carrots, lettuce, spinach, asparagus, pumpkins, and eggplants to your diet.<br/>
+2) Add a healthy portion of red meat to your diet too. But keep in mind not to overdo it. The aim is to add weight, not cholesterol!<br/>
+3) You can even add olive oil in generous quantities to your salads.<br/>
+4) Another way to add calories to your diet is by increasing the consumption of dairy products. Don�t cut back on the fat content in your milk. Do not ask for low-fat curd at the store. Make sure you consume a full calorie dairy product.<br/>
+
+Foods rich in calories and proteins easily help people gain and maintain weight as opposed to other foods.
+<br/><br/>
+
+2. <b>Increase The Number Of Meals</b>:<br/>
+Have six meals a day � three big meals and three small. Breakfast, lunch, and dinner should be heavy and calorie-rich. A heavy dinner adds weight to your body as your metabolism is not as active when you sleep as compared to when you are awake.<br/>
+
+<b>What You Have To Do</b>
+<br/>For breakfast, go for a full bowl of cereal, toasted bread with butter, and fruit. If you�re not a big fan of butter, you can always pick cheese or a yummy spread of peanut butter.
+For snacks, have nuts and dry fruits, boiled veggies with a dollop of cream, or cheese sandwiches.
+You can add some more items to your dessert tray.
+And, once in a while, you can give in to your taste buds and indulge in cakes, pizzas, burgers and whatever else your heart fancies.<br/>
+<b>Why Does It Work</b><br/>
+Frequently eating every three to four hours helps maintain consistent energy levels in your body (2). The meal portions are not big, so there is no fat gain.
+<br/>
+Speaking of no fat gain, gaining lean muscle mass is something that you should focus on. Here is how to do it.
+<br/><br/>
+3. <b>High Proteins Along With Calories</b><br/>
+Only calories won�t add to your body weight; you need to include the right amount of proteins in your diet. Remember, if you want to put on weight and look fit, you need to build muscles, not flab.
+<br/>
+<b>What You Need</b><br/>
+Eggs, lean meat, fish, skinless chicken, pulses, sprouts, and dairy products that rich sources of proteins. Fish such as tuna and mackerel are rich in oil and are one of the best ways to increase weight.
+<br/>
+<b>Why Does It Work</b><br/>
+Proteins contain amino acids that are the building blocks of muscles. These food sources will give you enough protein necessary to build and tone muscles.
+<br/>
+So, do you have to ignore fats completely? The answer is no. Consuming fats is not always a bad habit, provided you know the type of fats you are consuming. Here is why you should include healthy fats in your daily diet.
+<br/><br/>
+4. <b>Healthy Fats</b>:
+<br/>Good fats are necessary for muscle growth and production of hormones like testosterone. This is essential for the growth and strength of muscles. This also helps to elevate the metabolic rate, which in turn helps the body lose bad fats and gain good fats. Fats are essential for many vital body functions. Polyunsaturated and monounsaturated fats are considered good fats that can be obtained from nuts, leafy veggies, salmon, flaxseed oil, avocados oil, and many seeds. Healthy fats are also a good source of omega-3 and omega-6 fatty acids.
+<br/>
+If you still can�t gain weight, or if you are always traveling and do not have a kitchen to cook your food, you may try some of the weight gain supplements mentioned below.
+<br/><br/>
+5. <b>Weight Gain Supplements</b><br/>
+In some cases, just the diet and exercise may not bring results as quickly as you expect. Another way to go about this is by including some additional supplements in your diet.
+<br/>
+<b>What You Need</b><br/>
+Whey protein is an increasingly popular supplement you can add to your milk or smoothies.
+<br/>
+<b>Why Does It Work</b><br/>
+In this case, adding some supplements like whey protein contributes to the body mass and aid in muscle development (4).
+<br/>
+If you are confused regarding how to plan your foods and the best time to eat, here is a diet chart you can follow to put on the desired weight.<br/><br/>
+</p>
+<a  id="submit" onclick="div_hide()">Close</a>
+</form>
+</div></div>
+
+
+<div id="abc2">
+<div id="popupContact">
+
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="cancel1.jpg" style="height:30px;width:30px" onclick ="div_hide()">
+<h2>Diet Plan</h2>
+<hr>
+<p><b>Diet in old age</b>:
+<br/>Most people approaching 70s or in 70s experience sudden loss of weight. In such a case, a health care provider prescribes a high-calorie diet for them. The primary objective of the high-calorie diet plans is to put on considerable weight and maintaining it.
+<br/>Fibre-rich food options are excellent for gastrointestinal tract changes and constipation problems that are common concerns in the old-age. Soft foods that are easy to chew and high in fat are advised for elderly. Cooked or baked vegetables, fresh fruit and cereals are fibre-rich options for 70-year olds.
+Elderly do not experience thirst more often, but fluid in their diet is one of the essentials. Fluids such as milk, tea, coffee, soda and soup help in the prevention of constipation.
+Arthritis is a common old-age disease,  though remaining active and engaging in physical activity can ascertain healthy being.
+There are several health supplements that help to lower cholesterol and prevent cancer. Discuss with your health care provider before incorporating these into your routine.
+<br/><br/><b>Healthy food options</b>:
+<br/><b>Protein</b>: Eggs, milk, lean meat, chicken, beans and lentils are excellent protein sources to keep elderly healthy.
+Vegetables: Carrots, sweet potato, tomatoes, spinach, broccoli, cabbage, onions and avocados are the healthy vegetables to be included in the diet plan of a 70-year old.
+<br/><b>Fruits</b>: Blackberries, strawberries, raspberries, kiwi, peaches, mango, melon and apples should be incorporated in a dietary regimen.
+<br/><b>Pulses and Grains</b>: Lentils, chick peas, brown rice and whole wheat products should also be incorporated in a diet plan for 70-year olds.
+<br/><b>Nuts and Seeds</b>: Walnuts, cashews, almonds, sunflower seeds, flax seeds and pumpkin seeds are healthy food options for old-age people.
+<br/><b>Fish</b>: Salmon, mackerel, sardines, herring, tuna and trout are healthy food options for old age..</p>
+<a  id="submit" onclick="div_hide()">Close</a>
+</form>
+</div></div>
+
+
+
+<div id="abc">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="cancel1.jpg" style="height:30px;width:30px" onclick ="div_hide()">
+<h2>Diet Plan</h2>
+<hr>
+<p>
+<b>The plan outlined here will</b>:
+<br/>
+Reduce your appetite significantly.Make you lose weight quickly, 
+without hunger.Improve your metabolic health at the same time.
+Here is a simple 3-step plan to lose weight fast.<br/><br/>
+
+1.<b>Cut Back on Sugars and Starches</b>
+The most important part is to cut back on sugars and starches(carbs).
+When you do that, your hunger levels go down and you end up eating
+much fewer calories (1).
+Now instead of burning carbs for energy, your body starts feeding 
+off of stored fat.<br/>
+
+Another benefit of cutting carbs is that it lowers insulin levels,
+causing your kidneys to shed excess sodium and water out of your body. 
+This reduces bloat and unnecessary water weight (2, 3).
+It is not uncommon to lose up to 10 pounds (sometimes more) in the 
+first week of eating this way, both body fat and water weight. 
+<br/><br/>
+2.<b> Eat Protein, Fat and Vegetables</b>
+Each one of your meals should include a protein source, a fat source
+and low-carb vegetables.
+Constructing your meals in this way will automatically bring your 
+carb intake into the recommended range of 20-50 grams per day.<br/>
+
+<strong>Protein Sources</strong>
+Meat: Beef, chicken, pork, lamb, etc.
+Fish and Seafood: Salmon, trout, shrimp, etc.
+Eggs: Whole eggs with the yolk are best.
+The importance of eating plenty of protein cannot be overstated.
+<br/>
+This has been shown to boost metabolism by 80to 100 calories per
+day (6, 7, 8).
+<br/>
+High-protein diets can also reduce cravings andobsessive thoughts 
+about food by 60%, reduce the desire for late-night snacking by 
+half, and makeyou so full that you automatically eat 441 fewer 
+calories per day just by adding protein to your
+diet (9, 10).
+<br/>
+When it comes to losing weight, protein is the kingof nutrients.Period.
+<br/><br/>
+<b>Low-Carb Vegetables</b>
+Broccoli
+Cauliflower
+Spinach
+Tomatoes
+Kale
+Brussels sprouts
+Cabbage
+Swiss chard
+Lettuce
+Cucumber
+Full list here.<br/>
+Dont be afraid to load your plate with these low-carbvegetables. 
+You can eat massive amounts of them without going over 20-50 net 
+carbs per day.
+A diet based mostly on meat and vegetables contains allthe fiber, 
+vitamins and minerals you need to be healthy.
+<br/><br/>
+<b>Fat Sources</b>
+Olive oil
+Coconut oil
+Avocado oil
+Butter
+Eat 2-3 meals per day. If you find yourself hungry in theafternoon, add
+a 4th meal.
+<br/>
+Don't be afraid of eating fat, as trying to do both low-carb AND low-fat
+at the same time is a recipe for failure. It will make you feel 
+miserable and abandon the plan.
+<br/>
+To see how you can assemble your meals, check out this low-carb meal.
+<br/><br/>
+3.<b> Lift Weights 3 Times Per Week</b>
+You don't need to exercise to lose weight on this plan, but it is 
+recommended.
+<br/>
+The best option is to go to the gym 3-4 times a week. Do a warm-up and 
+lift some weights.
+<br/>
+If you're new to the gym, ask a trainer for some advice.
+By lifting weights, you will burn lots of calories and prevent your 
+metabolism from slowing down, which is a 
+common side effect of losing weight (11, 12).
+<br/>
+<br/>
+Studies on low-carb diets show that you can even gain a bit of muscle while
+losing significant amounts of body fat (13).
+<br/>
+If lifting weights is not an option for you, then doing some cardio workouts
+like walking, jogging, running, cycling or swimming will suffice.
+<br/><br/><br/>
+
+</pre>
+<a  id="submit" onclick="div_hide()">Close</a>
+</form></div>
+</div>
+
+
+
+<div id="abc1">
+<div id="popupContact">
+<form action="#" id="form" method="post" name="form">
+<img id="close" src="cancel1.jpg" style="height:25px;width:25px" onclick ="div_hide()">
+<h2>Diet Plan</h2>
+<hr>
+<p><b>GOALS:</b><br/>
+Eat 3 meals a day, plus pre- and post-workouts.Add calories in at every meal and snack through food and beverages.
+Get more carbohydrate into your diet through cereal,rice, pasta, fruits, and vegetables to provide fuel for activity.
+Cut down on fat in the diet and increase the protein and carbohydrate.
+<br/><br/>
+<b>THE PLAN</b><br/>
+
+<b>Breakfast:</b>
+<br/>
+Select from one of the following menus
+<br/>
+Orange juice (12-oz glass)<br/>
+Bowl of Cheerios (large) with granola added, 
+skim milk.<br/>
+Bagel or 2 slices of wheat toast with 1 tablespoon of peanut butter on each piece or2 pieces of fruit
+<br/>A glass of juice (12 oz)
+<br/>A breakfast sandwich on an English muffinScrambled eggs (2)2 pieces of ham
+<br/>2 slices of cheeseor
+<br/>Bagel with 1 tablespoon of peanut butterSmoothie, made with:
+<br/>1 scoop of protein powder8 oz yogurt 12 oz skim milk 1 cup of frozen fruit
+<br/><br/><b>Post-Workout Snack</b>
+<br/>
+Eat something within 15 minutes of finishing 
+your workout, even if you are not hungry. If 
+you exercise more than once a day, you need 
+to eat something after every 
+workout.Choose between one of the following 
+options that are optimized to recover as well
+as increase weight.
+<br/>
+<br/><b>Sports drink</b>
+<br/><b>Snack</b>
+<br/>Peanut butter and jelly sandwich 
+<br/>A container of yogurt with granola
+<br/>A small bag of trail mix and sports drink
+<br/>Energy bar, such as Balance, Power or Clif Bar Lunch
+<br/><br/>
+<b>Select from one of the following menus</b>
+<br/>
+Submarine sandwich (12-inch), made with one of
+the following proteins:
+<br/>Chicken
+<br/>Tuna
+<br/>Steak
+<br/>Ham and cheese
+<br/>Baked chips
+<br/>Lemonade or juice
+
+<br/><b>or</b>
+<br/>Cheeseburger
+<br/>Grilled chicken sandwich
+<br/>French fries (small)
+<br/>Milkshake (small)
+
+<br/><b>or</b>
+
+<br/>Omelet with 3 eggs, cheese, vegetables,
+<br/>Hash browns
+<br/>Toast (2 slices)
+<br/>Afternoon Snack
+
+<br/><br/><b>Drink</b>
+
+<br/>Low-fat milk
+<br/>Juice
+<br/>Lemonade
+<br/><b>Snack</b>
+<br/>Banana with peanut butter (2 tablespoons)
+<br/>Trail mix with cereal, nuts, and dried fruit (1 cup or 2 handfuls)
+<br/>Cheese and crackers
+<br/>Cereal (large bowl)
+
+<br/><br/><b>Dinner</b>
+
+<br/>Split your plate evenly between protein and 
+carbohydrates
+
+<br/><br/><b>Protein</b>
+<br/>Steak
+<br/>Chicken
+<br/>Fish
+<br/>Pork
+<br/>Turkey
+
+<br/><br/><b>Carbohydrates</b> 
+<br/>Pasta
+<br/>Baked potato
+<br/>Rice
+<br/>Corn
+
+</p>
+<a  id="submit" onclick="div_hide()">Close</a>
+</form>
+
+
+
+</div>
+</div>
+
+<div class="box">
+    
+	<a class="button" onclick="div_show()">Enter</a>
+    
+</div>  
+</body>
+
+<script>
+
+function div_show() {
+var b=document.getElementById("i1").value;
+var a=document.getElementById("i2").value;
+var c=document.getElementById("i3").value;
+
+if((b>=60 && b<=80) && (a>=40 && a<=90))
+{
+document.getElementById('abc2').style.display = "block";
+}
+
+if((b>18 && b<60) && (a>=40 && a<=62) && (c>150 && c<173))
+{
+document.getElementById('abc3').style.display = "block";
+}
+if((b>18 && b<60) && (a>62 && a<=73) && (c>150 && c<173))
+{
+document.getElementById('abc1').style.display = "block";
+}
+if((b>18 && b<60) && (a>73 && a<100) && (c>150 && c<173))
+{
+document.getElementById('abc').style.display = "block";
+}
+
+
+
+if((b>18 && b<60) && (a>=40 && a<=65) && (c>173 && c<198))
+{
+document.getElementById('abc3').style.display = "block";
+}
+if((b>18 && b<60) && (a>65 && a<=80) && (c>173 && c<198))
+{
+document.getElementById('abc1').style.display = "block";
+}
+if((b>18 && b<60) && (a>80 && a<100) && (c>173 && c<198))
+{
+document.getElementById('abc').style.display = "block";
+}
+}
+
+
+
+function div_hide(){
+document.getElementById('abc').style.display = "none";
+document.getElementById('abc1').style.display = "none";
+document.getElementById('abc2').style.display = "none";
+document.getElementById('abc3').style.display = "none";
+}
+</script>
+
+</html>
